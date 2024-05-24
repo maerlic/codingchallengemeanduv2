@@ -22,12 +22,10 @@ git clone https://github.com/yourusername/codingchallengemeandu.git
 
 cd codingchallengemeandu
 
-npm install
-
 Usage
 
 Start the server by running:
-npm start
+npm run dev
 
 Endpoints
 Get Pokemon Data
