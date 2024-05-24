@@ -1,4 +1,4 @@
-import express from 'express'; // Import express, a web application framework for Node.js
+import express from 'express'; 
 import { getPokemon, getPokemonTranslated } from './controllers/pokemonController'; // Import the controller functions from the pokemonController module
 
 const app = express(); // Create an instance of an Express application
