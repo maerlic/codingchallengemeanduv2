@@ -11,9 +11,10 @@ describe('GET /pokemon/:name', () => {
     const response = await request.get('/pokemon/pikachu'); // Make a GET request to the endpoint with 'pikachu' as the Pokemon name
     expect(response.status).toBe(200); // Expect the response status to be 200 OK
     expect(response.body.name).toBe('pikachu'); // Expect the name in the response body to be 'pikachu'
-    expect(response.body.description).toBeDefined(); // Expect the description to be defined
-    expect(response.body.habitat).toBeDefined(); // Expect the habitat to be defined
-    expect(response.body.isLegendary).toBeDefined(); // Expect the legendary status to be defined
+    expect(typeof response.body.name).toBe('string'); // Expect the name to be a string
+    expect(typeof response.body.description).toBe('string'); // Expect the description to be a string
+    expect(typeof response.body.habitat).toBe('string'); // Expect the habitat to be a string
+    expect(typeof response.body.isLegendary).toBe('boolean'); // Expect the legendary status to be a boolean
   });
 
   // Test case to check how the endpoint handles a non-existent Pokemon
