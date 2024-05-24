@@ -18,19 +18,15 @@ Technologies Used
 Installation
 
 Clone the repository and install the dependencies to get started:
-
-bash
-
 git clone https://github.com/yourusername/codingchallengemeandu.git
+
 cd codingchallengemeandu
+
 npm install
 
 Usage
 
 Start the server by running:
-
-bash
-
 npm start
 
 Endpoints
@@ -74,9 +70,6 @@ Get Translated Pokemon Description
 Testing
 
 Run the automated tests for this system:
-
-bash
-
 npm test
 
 Thought Process and Trade-offs
