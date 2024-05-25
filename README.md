@@ -112,5 +112,6 @@ License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
+Contact Information
 
 For any questions, please contact Marco Aerlic at aerlic7@gmail.com
