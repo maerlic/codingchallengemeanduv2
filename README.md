@@ -14,6 +14,7 @@ Technologies Used
     Axios for API requests
     Jest for testing
     TypeScript
+    Winston for logging
 
 Installation
 
