@@ -36,23 +36,27 @@ export const getPokemonData = async (name: string) => {
  * @param name - The name of the Pokemon species.
  * @returns An object containing the Pokemon's name, translated description, habitat, legendary status, and the translation type applied.
  */
-export const getTranslatedDescription = async (name: string) => {
-    logger.info(`Fetching data for Pokemon and translating the description: ${name}`); // Log the fetch and translate attempt
+export const getPokemonDataAndTranslateDescription = async (name: string) => {
+    logger.info(`Fetching data for Pokemon and translating the description: ${name}`);
 
-    const pokemonData = await getPokemonData(name); // Fetch Pokemon data using the service function
-    const { description, habitat, isLegendary } = pokemonData; // Destructure the fetched Pokemon data
+    const pokemonData = await getPokemonData(name);
+    logger.info(`Fetched Pokemon data: ${JSON.stringify(pokemonData)}`);
 
-    // Determine the translation type based on habitat and legendary status
+    const { description, habitat, isLegendary } = pokemonData;
     const translationType = getTranslationType(habitat, isLegendary);
-    const translationUrl = `${TRANSLATE_URL}/${translationType}.json?text=${description}`; // Construct the URL for the FunTranslations API request
+    logger.info(`Translation Type: ${translationType}`);
 
-    const translationResponse = await axios.get(translationUrl); // Make an HTTP GET request to the FunTranslations API
-    const translatedDescription = translationResponse.data.contents.translated; // Extract the translated description from the response
+    const translationUrl = `${TRANSLATE_URL}/${translationType}.json?text=${description}`;
+    logger.info(`Translation URL: ${translationUrl}`);
 
-    // Return an object containing the Pokemon details and the translated description
+    const translationResponse = await axios.get(translationUrl);
+    logger.info(`Translation response: ${JSON.stringify(translationResponse.data)}`);
+
+    const translatedDescription = translationResponse.data.contents.translated;
+
     return {
-        ...pokemonData, // Spread the original Pokemon data
-        description: translatedDescription, // Translated description of the Pokemon
-        translationApplied: translationType, // The type of translation applied (Yoda or Shakespeare)
+        ...pokemonData,
+        description: translatedDescription,
+        translationApplied: translationType,
     };
 };

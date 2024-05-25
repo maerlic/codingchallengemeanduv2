@@ -1,5 +1,5 @@
 import express from 'express'; // Import express for type definitions for the request and response objects
-import { getPokemonData, getTranslatedDescription } from '../services/pokemonService'; // Import the service functions
+import { getPokemonData, getPokemonDataAndTranslateDescription } from '../services/pokemonService'; // Import the service functions
 import logger from '../utils/logger'; // Import the logger for logging error and info messages
 
 /**
@@ -27,7 +27,7 @@ export const getPokemon = async (req: express.Request, res: express.Response) =>
 export const getPokemonTranslated = async (req: express.Request, res: express.Response) => {
     try {
         const { name } = req.params; // Extract the Pokemon species name from the request parameters
-        const translatedData = await getTranslatedDescription(name); // Fetch and translate Pokemon description using the service function
+        const translatedData = await getPokemonDataAndTranslateDescription(name); // Fetch and translate Pokemon description using the service function
         res.json(translatedData); // Send the translated Pokemon data as a JSON response
     } catch (error) {
         // Log the error message and stack trace for debugging purposes
