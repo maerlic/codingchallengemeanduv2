@@ -1,5 +1,6 @@
 import axios from 'axios'; // Import axios for making HTTP requests
 import { FlavorText, PokemonSpecies } from '../interfaces/pokemonInterfaces'; // Import TypeScript interfaces for type definitions
+import { getTranslationType } from '../utils/translationHelper'; // Import translationHelper to figure out the translation type for different Pokemon
 import logger from '../utils/logger'; // Import the logger for logging info and error messages
 
 // Base URLs for the PokeAPI and FunTranslations API
@@ -42,7 +43,7 @@ export const getTranslatedDescription = async (name: string) => {
     const { description, habitat, isLegendary } = pokemonData; // Destructure the fetched Pokemon data
 
     // Determine the translation type based on habitat and legendary status
-    const translationType = (habitat === 'cave' || isLegendary) ? 'yoda' : 'shakespeare';
+    const translationType = getTranslationType(habitat, isLegendary);
     const translationUrl = `${TRANSLATE_URL}/${translationType}.json?text=${description}`; // Construct the URL for the FunTranslations API request
 
     const translationResponse = await axios.get(translationUrl); // Make an HTTP GET request to the FunTranslations API

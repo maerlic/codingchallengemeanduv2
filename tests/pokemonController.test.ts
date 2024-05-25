@@ -25,7 +25,7 @@ describe('GET /pokemon/:name', () => {
   });
 });
 
-// Describe block for testing the GET /pokemon/translate/:name endpoint
+// Describe block for testing the GET /pokemon/:name/translate endpoint
 describe('GET /pokemon/:name/translate', () => {
   
   // Test case to check if the endpoint returns translated description in Yoda style for cave habitat or legendary Pokemon
