@@ -1,0 +1,48 @@
+2024-05-25T03:41:04.178Z [info]: Fetching data for Pokemon: pikachu
+2024-05-25T03:41:04.623Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-25T03:41:04.709Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-25T03:41:04.711Z [info]: Fetching data for Pokemon and translating the description: zubat
+2024-05-25T03:41:04.711Z [info]: Fetching data for Pokemon: zubat
+2024-05-25T03:41:08.565Z [info]: Fetching data for Pokemon and translating the description: pikachu
+2024-05-25T03:41:08.565Z [info]: Fetching data for Pokemon: pikachu
+2024-05-25T03:41:08.937Z [info]: Fetching data for Pokemon and translating the description: nonexistentpokemon
+2024-05-25T03:41:08.937Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-25T03:41:08.988Z [error]: Failed to fetch or translate data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-25T03:53:44.812Z [info]: Fetching data for Pokemon: pikachu
+2024-05-25T03:53:45.015Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-25T03:53:45.095Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-25T03:53:45.098Z [info]: Fetching data for Pokemon and translating the description: zubat
+2024-05-25T03:53:45.098Z [info]: Fetching data for Pokemon: zubat
+2024-05-25T03:53:46.480Z [info]: Fetching data for Pokemon and translating the description: pikachu
+2024-05-25T03:53:46.481Z [info]: Fetching data for Pokemon: pikachu
+2024-05-25T03:53:47.085Z [info]: Fetching data for Pokemon and translating the description: nonexistentpokemon
+2024-05-25T03:53:47.085Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-25T03:53:47.131Z [error]: Failed to fetch or translate data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)

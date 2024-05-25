@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000; // Define the port on which the server wi
 app.get('/pokemon/:name', getPokemon);
 
 // Define a route handler for GET requests to /pokemon/:name/translate
-// This route will invoke the getPokemonTranslated function, which fetches and translates Pokemon descriptions by species name
+// This route will invoke the getPokemonTranslated function, which fetches the Pokemon data and translates the descriptions by species name
 app.get('/pokemon/:name/translate', getPokemonTranslated);
 
 // Start the Express server and have it listen on the specified port
