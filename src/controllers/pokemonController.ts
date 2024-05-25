@@ -1,6 +1,6 @@
 import axios from 'axios'; // Import axios for making HTTP requests
 import express from 'express'; // Import express for type definitions for the request and response objects
-import { FlavorText, PokemonSpecies } from '../interfaces/pokemonInterfaces'; // Adjust the path as needed
+import { FlavorText, PokemonSpecies } from '../interfaces/pokemonInterfaces'; // Import interfaces
 
 // Function to handle GET requests to fetch Pokemon data by species name
 export async function getPokemon(req: express.Request, res: express.Response) {
