@@ -1,7 +1,7 @@
 Pokemon Translation API
 Description
 
-This project provides an API that integrates with the PokeAPI and FunTranslations API to retrieve Pokemon species data and translate their descriptions based on habitat and legendary status. It includes two main endpoints: one for fetching Pokemon data and another for fetching translated descriptions.
+This project provides an API that integrates with the PokeAPI and FunTranslations API to retrieve Pokemon species data and translate their descriptions based on habitat and legendary status. It includes two main endpoints: one for fetching Pokemon data and another for fetching data while also translating descriptions.
 Features
 
     Fetch Pokemon Data: Retrieve data including name, description, habitat, and legendary status.
