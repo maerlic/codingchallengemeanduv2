@@ -12,6 +12,6 @@ export const translationConfig = {
 
             // Translation type to apply if the condition is met
             translation: 'yoda'
-        },
+        }
     ]
 };
