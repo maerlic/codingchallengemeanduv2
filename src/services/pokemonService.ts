@@ -16,19 +16,28 @@ export const getPokemonData = async (name: string) => {
     logger.info(`Fetching data for Pokemon: ${name}`); // Log the fetch attempt
 
     const url = `${POKEAPI_URL}/${name}`; // Construct the URL for the PokeAPI request
+    logger.debug(`Constructed URL: ${url}`); // Log the constructed URL
+
     const response = await axios.get<PokemonSpecies>(url); // Make an HTTP GET request to the PokeAPI
+    logger.info(`Received response for Pokemon: ${name}`); // Log the response received
+
     const pokemon = response.data; // Extract the data from the response
+    logger.debug(`Extracted data: ${JSON.stringify(pokemon)}`); // Log the extracted data
 
     // Find the first English flavor text description, or set an empty string if not found
     const description = pokemon.flavor_text_entries.find((f: FlavorText) => f.language.name === 'en')?.flavor_text || '';
+    logger.debug(`Found description: ${description}`); // Log the found description
 
-    // Return an object containing the relevant Pokemon details
-    return {
+    // Construct the result object
+    const result = {
         name: pokemon.name, // Name of the Pokemon
         description, // English flavor text description of the Pokemon
         habitat: pokemon.habitat?.name, // Habitat of the Pokemon
         isLegendary: pokemon.is_legendary, // Legendary status of the Pokemon
     };
+    logger.info(`Constructed result for Pokemon: ${name}`, { result }); // Log the constructed result
+
+    return result; // Return the result
 };
 
 /**
@@ -54,9 +63,12 @@ export const getPokemonDataAndTranslateDescription = async (name: string) => {
 
     const translatedDescription = translationResponse.data.contents.translated;
 
-    return {
+    const result = {
         ...pokemonData,
         description: translatedDescription,
         translationApplied: translationType,
     };
+    logger.info(`Constructed result for Pokemon: ${name}`, { result });
+
+    return result;
 };
