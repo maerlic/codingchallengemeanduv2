@@ -23,11 +23,32 @@ describe('GET /pokemon/:name', () => {
     expect(response.status).toBe(500); // Expect the response status to be 500 Internal Server Error
     expect(response.body.error).toBe('Failed to fetch data'); // Expect the error message in the response body to indicate a failure to fetch data
   });
+
+  // Test case to check if the endpoint handles invalid Pokemon names
+  it('should return 400 for invalid Pokemon names', async () => {
+    const response = await request.get('/pokemon/pikachu!'); // Make a GET request to the endpoint with an invalid Pokemon name
+    expect(response.status).toBe(400); // Expect the response status to be 400 Bad Request
+    expect(response.body.error).toBe('Invalid Pokemon name. It contains invalid characters.'); // Expect the error message to indicate invalid characters
+  });
+
+  // Test case to check if the endpoint handles invalid Pokemon names with emoji
+  it('should return 400 for Pokemon names with emoji', async () => {
+    const response = await request.get('/pokemon/pikachu✨'); // Invalid character '✨'
+    expect(response.status).toBe(400);
+    expect(response.body.error).toBe('Invalid Pokemon name. It contains invalid characters.');
+  });
+
+  // Test case to check if the endpoint handles multiple consecutive spaces (optional)
+  it('should return 400 for Pokemon names with multiple consecutive spaces', async () => {
+    const response = await request.get('/pokemon/Mr.  Mime'); // Double spaces
+    expect(response.status).toBe(400);
+    expect(response.body.error).toBe('Invalid Pokemon name. It contains invalid characters.');
+  });
 });
 
 // Describe block for testing the GET /pokemon/:name/translate endpoint
 describe('GET /pokemon/:name/translate', () => {
-  
+
   // Test case to check if the endpoint returns translated description in Yoda style for cave habitat or legendary Pokemon
   it('should return translated description in Yoda style for cave habitat or legendary', async () => {
     const response = await request.get('/pokemon/zubat/translate'); // Make a GET request to the endpoint with 'zubat' as the Pokemon name
@@ -47,5 +68,26 @@ describe('GET /pokemon/:name/translate', () => {
     const response = await request.get('/pokemon/nonexistentpokemon/translate'); // Make a GET request to the endpoint with a non-existent Pokemon name
     expect(response.status).toBe(500); // Expect the response status to be 500 Internal Server Error
     expect(response.body.error).toBe('Failed to fetch or translate data'); // Expect the error message in the response body to indicate a failure to fetch or translate data
+  });
+
+  // Test case to check if the endpoint handles invalid Pokemon names
+  it('should return 400 for invalid Pokemon names', async () => {
+    const response = await request.get('/pokemon/pikachu!/translate'); // Make a GET request to the endpoint with an invalid Pokemon name
+    expect(response.status).toBe(400); // Expect the response status to be 400 Bad Request
+    expect(response.body.error).toBe('Invalid Pokemon name. It contains invalid characters.'); // Expect the error message to indicate invalid characters
+  });
+
+  // Test case to check if the endpoint handles invalid Pokemon names with special characters
+  it('should return 400 for Pokemon names with special characters', async () => {
+    const response = await request.get('/pokemon/pikachu@/translate'); // Make a GET request to the endpoint with an invalid Pokemon name containing special characters
+    expect(response.status).toBe(400); // Expect the response status to be 400 Bad Request
+    expect(response.body.error).toBe('Invalid Pokemon name. It contains invalid characters.'); // Expect the error message to indicate invalid characters
+  });
+
+  // Test case to check if the endpoint handles invalid Pokemon names with emoji
+  it('should return 400 for Pokemon names with emoji', async () => {
+    const response = await request.get('/pokemon/pikachu✨/translate'); // Invalid character '✨'
+    expect(response.status).toBe(400);
+    expect(response.body.error).toBe('Invalid Pokemon name. It contains invalid characters.');
   });
 });

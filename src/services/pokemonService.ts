@@ -39,36 +39,49 @@ export const getPokemonData = async (name: string) => {
 
     return result; // Return the result
 };
-
 /**
  * Fetches data for a given Pokemon species name and translates its description.
  * @param name - The name of the Pokemon species.
  * @returns An object containing the Pokemon's name, translated description, habitat, legendary status, and the translation type applied.
  */
 export const getPokemonDataAndTranslateDescription = async (name: string) => {
+    // Log the start of the process for fetching and translating Pokemon data
     logger.info(`Fetching data for Pokemon and translating the description: ${name}`);
 
+    // Fetch the Pokemon data using the provided species name
     const pokemonData = await getPokemonData(name);
+    // Log the fetched Pokemon data
     logger.info(`Fetched Pokemon data: ${JSON.stringify(pokemonData)}`);
 
+    // Destructure the necessary properties from the fetched Pokemon data
     const { description, habitat, isLegendary } = pokemonData;
+    // Determine the type of translation to apply based on the Pokemon's habitat and legendary status
     const translationType = getTranslationType(habitat, isLegendary);
+    // Log the determined translation type
     logger.info(`Translation Type: ${translationType}`);
 
+    // Construct the URL for the translation API request
     const translationUrl = `${TRANSLATE_URL}/${translationType}.json?text=${description}`;
+    // Log the constructed translation URL
     logger.info(`Translation URL: ${translationUrl}`);
 
+    // Fetch the translated description from the translation API
     const translationResponse = await axios.get(translationUrl);
+    // Log the response received from the translation API
     logger.info(`Translation response: ${JSON.stringify(translationResponse.data)}`);
 
+    // Extract the translated description from the translation API response
     const translatedDescription = translationResponse.data.contents.translated;
 
+    // Construct the result object containing the original Pokemon data and the translated description
     const result = {
         ...pokemonData,
         description: translatedDescription,
         translationApplied: translationType,
     };
+    // Log the constructed result object
     logger.info(`Constructed result for Pokemon: ${name}`, { result });
 
+    // Return the result object
     return result;
 };

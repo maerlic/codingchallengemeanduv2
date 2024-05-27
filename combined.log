@@ -46,3 +46,363 @@
     at processTicksAndRejections (node:internal/process/task_queues:82:21)
     at Axios.request (/home/marco/codingchallengecheck/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-26T02:09:10.560Z [info]: Fetching data for Pokemon: pikachu
+2024-05-26T02:09:10.773Z [info]: Received response for Pokemon: pikachu
+2024-05-26T02:09:10.774Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T02:09:10.781Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-26T02:09:10.852Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-26T02:09:10.855Z [info]: Fetching data for Pokemon and translating the description: zubat
+2024-05-26T02:09:10.855Z [info]: Fetching data for Pokemon: zubat
+2024-05-26T02:09:10.893Z [info]: Received response for Pokemon: zubat
+2024-05-26T02:09:10.893Z [info]: Constructed result for Pokemon: zubat
+2024-05-26T02:09:10.893Z [info]: Fetched Pokemon data: {"name":"zubat","description":"Forms colonies in\nperpetually dark\nplaces. Uses\fultrasonic waves\nto identify and\napproach targets.","habitat":"cave","isLegendary":false}
+2024-05-26T02:09:10.893Z [info]: Translation Type: yoda
+2024-05-26T02:09:10.893Z [info]: Translation URL: https://api.funtranslations.com/translate/yoda.json?text=Forms colonies in
+perpetually dark
+places. Usesultrasonic waves
+to identify and
+approach targets.
+2024-05-26T02:09:12.124Z [info]: Translation response: {"success":{"total":1},"contents":{"translated":"Forms colonies inperpetually darkplaces.Andapproach targets,  uses ultrasonic wavesto identify.","text":"Forms colonies inperpetually darkplaces. Uses\fultrasonic wavesto identify andapproach targets.","translation":"yoda"}}
+2024-05-26T02:09:12.124Z [info]: Constructed result for Pokemon: zubat
+2024-05-26T02:09:12.126Z [info]: Fetching data for Pokemon and translating the description: pikachu
+2024-05-26T02:09:12.126Z [info]: Fetching data for Pokemon: pikachu
+2024-05-26T02:09:12.162Z [info]: Received response for Pokemon: pikachu
+2024-05-26T02:09:12.162Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T02:09:12.162Z [info]: Fetched Pokemon data: {"name":"pikachu","description":"When several of\nthese POKéMON\ngather, their\felectricity could\nbuild and cause\nlightning storms.","habitat":"forest","isLegendary":false}
+2024-05-26T02:09:12.162Z [info]: Translation Type: shakespeare
+2024-05-26T02:09:12.162Z [info]: Translation URL: https://api.funtranslations.com/translate/shakespeare.json?text=When several of
+these POKéMON
+gather, theirelectricity could
+build and cause
+lightning storms.
+2024-05-26T02:09:12.417Z [info]: Translation response: {"success":{"total":1},"contents":{"translated":"At which hour several ofthese pokémongather,  their electricity couldbuild and causelightning storms.","text":"When several ofthese POKéMONgather, their\felectricity couldbuild and causelightning storms.","translation":"shakespeare"}}
+2024-05-26T02:09:12.418Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T02:09:12.422Z [info]: Fetching data for Pokemon and translating the description: nonexistentpokemon
+2024-05-26T02:09:12.422Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-26T02:09:12.462Z [error]: Failed to fetch or translate data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-26T04:03:00.013Z [info]: Fetching data for Pokemon: pikachu
+2024-05-26T04:03:00.172Z [info]: Received response for Pokemon: pikachu
+2024-05-26T04:03:00.172Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T04:03:00.177Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-26T04:03:00.243Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-26T04:03:00.245Z [info]: Fetching data for Pokemon and translating the description: zubat
+2024-05-26T04:03:00.246Z [info]: Fetching data for Pokemon: zubat
+2024-05-26T04:03:00.280Z [info]: Received response for Pokemon: zubat
+2024-05-26T04:03:00.281Z [info]: Constructed result for Pokemon: zubat
+2024-05-26T04:03:00.281Z [info]: Fetched Pokemon data: {"name":"zubat","description":"Forms colonies in\nperpetually dark\nplaces. Uses\fultrasonic waves\nto identify and\napproach targets.","habitat":"cave","isLegendary":false}
+2024-05-26T04:03:00.281Z [info]: Translation Type: yoda
+2024-05-26T04:03:00.281Z [info]: Translation URL: https://api.funtranslations.com/translate/yoda.json?text=Forms colonies in
+perpetually dark
+places. Usesultrasonic waves
+to identify and
+approach targets.
+2024-05-26T04:03:01.643Z [info]: Translation response: {"success":{"total":1},"contents":{"translated":"Forms colonies inperpetually darkplaces.Andapproach targets,  uses ultrasonic wavesto identify.","text":"Forms colonies inperpetually darkplaces. Uses\fultrasonic wavesto identify andapproach targets.","translation":"yoda"}}
+2024-05-26T04:03:01.644Z [info]: Constructed result for Pokemon: zubat
+2024-05-26T04:03:01.646Z [info]: Fetching data for Pokemon and translating the description: pikachu
+2024-05-26T04:03:01.647Z [info]: Fetching data for Pokemon: pikachu
+2024-05-26T04:03:01.681Z [info]: Received response for Pokemon: pikachu
+2024-05-26T04:03:01.681Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T04:03:01.681Z [info]: Fetched Pokemon data: {"name":"pikachu","description":"When several of\nthese POKéMON\ngather, their\felectricity could\nbuild and cause\nlightning storms.","habitat":"forest","isLegendary":false}
+2024-05-26T04:03:01.681Z [info]: Translation Type: shakespeare
+2024-05-26T04:03:01.681Z [info]: Translation URL: https://api.funtranslations.com/translate/shakespeare.json?text=When several of
+these POKéMON
+gather, theirelectricity could
+build and cause
+lightning storms.
+2024-05-26T04:03:01.960Z [info]: Translation response: {"success":{"total":1},"contents":{"translated":"At which hour several ofthese pokémongather,  their electricity couldbuild and causelightning storms.","text":"When several ofthese POKéMONgather, their\felectricity couldbuild and causelightning storms.","translation":"shakespeare"}}
+2024-05-26T04:03:01.960Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T04:03:01.972Z [info]: Fetching data for Pokemon and translating the description: nonexistentpokemon
+2024-05-26T04:03:01.973Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-26T04:03:02.012Z [error]: Failed to fetch or translate data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-26T05:14:58.311Z [info]: Fetching data for Pokemon: pikachu
+2024-05-26T05:14:59.370Z [info]: Received response for Pokemon: pikachu
+2024-05-26T05:14:59.371Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T05:14:59.379Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-26T05:14:59.701Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-26T05:14:59.703Z [info]: Fetching data for Pokemon and translating the description: zubat
+2024-05-26T05:14:59.703Z [info]: Fetching data for Pokemon: zubat
+2024-05-26T05:14:59.738Z [info]: Received response for Pokemon: zubat
+2024-05-26T05:14:59.738Z [info]: Constructed result for Pokemon: zubat
+2024-05-26T05:14:59.739Z [info]: Fetched Pokemon data: {"name":"zubat","description":"Forms colonies in\nperpetually dark\nplaces. Uses\fultrasonic waves\nto identify and\napproach targets.","habitat":"cave","isLegendary":false}
+2024-05-26T05:14:59.739Z [info]: Translation Type: yoda
+2024-05-26T05:14:59.739Z [info]: Translation URL: https://api.funtranslations.com/translate/yoda.json?text=Forms colonies in
+perpetually dark
+places. Usesultrasonic waves
+to identify and
+approach targets.
+2024-05-26T05:15:02.365Z [info]: Translation response: {"success":{"total":1},"contents":{"translated":"Forms colonies inperpetually darkplaces.Andapproach targets,  uses ultrasonic wavesto identify.","text":"Forms colonies inperpetually darkplaces. Uses\fultrasonic wavesto identify andapproach targets.","translation":"yoda"}}
+2024-05-26T05:15:02.366Z [info]: Constructed result for Pokemon: zubat
+2024-05-26T05:15:02.371Z [info]: Fetching data for Pokemon and translating the description: pikachu
+2024-05-26T05:15:02.371Z [info]: Fetching data for Pokemon: pikachu
+2024-05-26T05:15:02.416Z [info]: Received response for Pokemon: pikachu
+2024-05-26T05:15:02.417Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T05:15:02.417Z [info]: Fetched Pokemon data: {"name":"pikachu","description":"When several of\nthese POKéMON\ngather, their\felectricity could\nbuild and cause\nlightning storms.","habitat":"forest","isLegendary":false}
+2024-05-26T05:15:02.417Z [info]: Translation Type: shakespeare
+2024-05-26T05:15:02.417Z [info]: Translation URL: https://api.funtranslations.com/translate/shakespeare.json?text=When several of
+these POKéMON
+gather, theirelectricity could
+build and cause
+lightning storms.
+2024-05-26T05:15:02.697Z [info]: Translation response: {"success":{"total":1},"contents":{"translated":"At which hour several ofthese pokémongather,  their electricity couldbuild and causelightning storms.","text":"When several ofthese POKéMONgather, their\felectricity couldbuild and causelightning storms.","translation":"shakespeare"}}
+2024-05-26T05:15:02.698Z [info]: Constructed result for Pokemon: pikachu
+2024-05-26T05:15:02.707Z [info]: Fetching data for Pokemon and translating the description: nonexistentpokemon
+2024-05-26T05:15:02.708Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-26T05:15:02.745Z [error]: Failed to fetch or translate data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T01:57:30.410Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T01:57:30.638Z [info]: Received response for Pokemon: pikachu
+2024-05-27T01:57:30.639Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T01:57:30.648Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T01:57:30.728Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T01:57:30.734Z [info]: Fetching data for Pokemon: charizard
+2024-05-27T01:57:31.236Z [info]: Received response for Pokemon: charizard
+2024-05-27T01:57:31.237Z [info]: Constructed result for Pokemon: charizard
+2024-05-27T02:01:46.625Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:01:46.757Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:01:46.758Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:01:46.764Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:01:46.833Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:01:46.839Z [info]: Fetching data for Pokemon: Mr.  Mime
+2024-05-27T02:01:48.574Z [error]: Failed to fetch data for Pokemon: Mr.  Mime. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:04:23.778Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:04:23.952Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:04:23.954Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:04:23.960Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:04:24.032Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:05:30.766Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:05:30.927Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:05:30.928Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:05:30.937Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:05:31.003Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:05:31.010Z [info]: Fetching data for Pokemon and translating the description: zubat
+2024-05-27T02:05:31.010Z [info]: Fetching data for Pokemon: zubat
+2024-05-27T02:05:31.046Z [info]: Received response for Pokemon: zubat
+2024-05-27T02:05:31.046Z [info]: Constructed result for Pokemon: zubat
+2024-05-27T02:05:31.046Z [info]: Fetched Pokemon data: {"name":"zubat","description":"Forms colonies in\nperpetually dark\nplaces. Uses\fultrasonic waves\nto identify and\napproach targets.","habitat":"cave","isLegendary":false}
+2024-05-27T02:05:31.047Z [info]: Translation Type: yoda
+2024-05-27T02:05:31.047Z [info]: Translation URL: https://api.funtranslations.com/translate/yoda.json?text=Forms colonies in
+perpetually dark
+places. Usesultrasonic waves
+to identify and
+approach targets.
+2024-05-27T02:05:33.147Z [error]: Failed to fetch or translate data for Pokemon: zubat. Error: Request failed with status code 429 - AxiosError: Request failed with status code 429
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:05:33.152Z [info]: Fetching data for Pokemon and translating the description: pikachu
+2024-05-27T02:05:33.153Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:05:33.195Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:05:33.195Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:05:33.195Z [info]: Fetched Pokemon data: {"name":"pikachu","description":"When several of\nthese POKéMON\ngather, their\felectricity could\nbuild and cause\nlightning storms.","habitat":"forest","isLegendary":false}
+2024-05-27T02:05:33.196Z [info]: Translation Type: shakespeare
+2024-05-27T02:05:33.196Z [info]: Translation URL: https://api.funtranslations.com/translate/shakespeare.json?text=When several of
+these POKéMON
+gather, theirelectricity could
+build and cause
+lightning storms.
+2024-05-27T02:05:34.455Z [error]: Failed to fetch or translate data for Pokemon: pikachu. Error: Request failed with status code 429 - AxiosError: Request failed with status code 429
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:05:34.459Z [info]: Fetching data for Pokemon and translating the description: nonexistentpokemon
+2024-05-27T02:05:34.459Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:05:34.497Z [error]: Failed to fetch or translate data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:06:31.722Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:06:31.936Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:06:31.937Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:06:31.947Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:06:32.015Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:09:02.993Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:09:03.134Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:09:03.134Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:09:03.140Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:09:03.209Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeandu/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:13:44.148Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:13:44.304Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:13:44.305Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:13:44.312Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:13:44.379Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:13:44.386Z [info]: Fetching data for Pokemon and translating the description: zubat
+2024-05-27T02:13:44.386Z [info]: Fetching data for Pokemon: zubat
+2024-05-27T02:13:44.422Z [info]: Received response for Pokemon: zubat
+2024-05-27T02:13:44.423Z [info]: Constructed result for Pokemon: zubat
+2024-05-27T02:13:44.423Z [info]: Fetched Pokemon data: {"name":"zubat","description":"Forms colonies in\nperpetually dark\nplaces. Uses\fultrasonic waves\nto identify and\napproach targets.","habitat":"cave","isLegendary":false}
+2024-05-27T02:13:44.423Z [info]: Translation Type: yoda
+2024-05-27T02:13:44.423Z [info]: Translation URL: https://api.funtranslations.com/translate/yoda.json?text=Forms colonies in
+perpetually dark
+places. Usesultrasonic waves
+to identify and
+approach targets.
+2024-05-27T02:13:46.561Z [error]: Failed to fetch or translate data for Pokemon: zubat. Error: Request failed with status code 429 - AxiosError: Request failed with status code 429
+    at settle (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:13:46.579Z [info]: Fetching data for Pokemon and translating the description: pikachu
+2024-05-27T02:13:46.579Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:13:46.616Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:13:46.616Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:13:46.617Z [info]: Fetched Pokemon data: {"name":"pikachu","description":"When several of\nthese POKéMON\ngather, their\felectricity could\nbuild and cause\nlightning storms.","habitat":"forest","isLegendary":false}
+2024-05-27T02:13:46.617Z [info]: Translation Type: shakespeare
+2024-05-27T02:13:46.617Z [info]: Translation URL: https://api.funtranslations.com/translate/shakespeare.json?text=When several of
+these POKéMON
+gather, theirelectricity could
+build and cause
+lightning storms.
+2024-05-27T02:13:47.869Z [error]: Failed to fetch or translate data for Pokemon: pikachu. Error: Request failed with status code 429 - AxiosError: Request failed with status code 429
+    at settle (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:13:47.872Z [info]: Fetching data for Pokemon and translating the description: nonexistentpokemon
+2024-05-27T02:13:47.872Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:13:47.914Z [error]: Failed to fetch or translate data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:14:09.412Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:14:09.558Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:14:09.559Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:14:09.568Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:14:09.638Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-27T02:18:53.223Z [info]: Fetching data for Pokemon: pikachu
+2024-05-27T02:18:53.386Z [info]: Received response for Pokemon: pikachu
+2024-05-27T02:18:53.387Z [info]: Constructed result for Pokemon: pikachu
+2024-05-27T02:18:53.394Z [info]: Fetching data for Pokemon: nonexistentpokemon
+2024-05-27T02:18:53.457Z [error]: Failed to fetch data for Pokemon: nonexistentpokemon. Error: Request failed with status code 404 - AxiosError: Request failed with status code 404
+    at settle (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/adapters/http.js:589:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/marco/codingchallengetest/codingchallengemeanduv2/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
