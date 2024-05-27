@@ -9,22 +9,26 @@ import { validatePokemonName } from '../utils/validation'; // Import the validat
  */
 export const getPokemon = async (req: express.Request, res: express.Response) => {
     try {
-        const { name } = req.params; // Extract the Pokemon species name from the request parameters
+        // Extract the Pokemon species name from the request parameters
+        const { name } = req.params; 
 
         // Validate the Pokemon species name to ensure it contains only valid characters
         if (!validatePokemonName(name)) {
             // If the validation fails, return a 400 response with an appropriate error message
             return res.status(400).json({ error: 'Invalid Pokemon name. It contains invalid characters.' });
         }
+        // Fetch Pokemon data using the service function
+        const pokemonData = await getPokemonData(name); 
 
-        const pokemonData = await getPokemonData(name); // Fetch Pokemon data using the service function
-        res.json(pokemonData); // Send the fetched Pokemon data as a JSON response
+        // Send the fetched Pokemon data as a JSON response
+        res.json(pokemonData); 
     } catch (error) {
         // Log the error message and stack trace for debugging purposes
         logger.error(`Failed to fetch data for Pokemon: ${req.params.name}. Error: ${(error as Error).message}`, {
             stack: (error as Error).stack,
         });
-        res.status(500).json({ error: 'Failed to fetch data' }); // Send a 500 response with an error message
+        // Send a 500 response with an error message
+        res.status(500).json({ error: 'Failed to fetch data' }); 
     }
 };
 
@@ -34,21 +38,25 @@ export const getPokemon = async (req: express.Request, res: express.Response) =>
  */
 export const getPokemonTranslated = async (req: express.Request, res: express.Response) => {
     try {
-        const { name } = req.params; // Extract the Pokemon species name from the request parameters
+        // Extract the Pokemon species name from the request parameters
+        const { name } = req.params; 
 
         // Validate the Pokemon species name to ensure it contains only valid characters
         if (!validatePokemonName(name)) {
             // If the validation fails, return a 400 response with an appropriate error message
             return res.status(400).json({ error: 'Invalid Pokemon name. It contains invalid characters.' });
         }
+        // Fetch and translate Pokemon description using the service function
+        const translatedData = await getPokemonDataAndTranslateDescription(name); 
 
-        const translatedData = await getPokemonDataAndTranslateDescription(name); // Fetch and translate Pokemon description using the service function
-        res.json(translatedData); // Send the translated Pokemon data as a JSON response
+        // Send the translated Pokemon data as a JSON response
+        res.json(translatedData); 
     } catch (error) {
         // Log the error message and stack trace for debugging purposes
         logger.error(`Failed to fetch or translate data for Pokemon: ${req.params.name}. Error: ${(error as Error).message}`, {
             stack: (error as Error).stack,
         });
-        res.status(500).json({ error: 'Failed to fetch or translate data' }); // Send a 500 response with an error message
+        // Send a 500 response with an error message
+        res.status(500).json({ error: 'Failed to fetch or translate data' }); 
     }
 };
